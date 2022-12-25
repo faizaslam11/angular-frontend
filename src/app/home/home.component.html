@@ -1,0 +1,30 @@
+<form action="register()">
+    <div class="container">
+      <h1>Register</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+  
+      <label for="text"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="userName" [(ngModel)]="registerData.userName" required>
+  
+      
+      <label for="text"><b>Age</b></label>
+      <input type="text" placeholder="Enter Age" name="age" [(ngModel)]="registerData.age" required>
+  
+      <label for="text"><b>Gender</b></label>
+      <input type="text" placeholder="Enter Gender like Male/ Female/ Others" name="gender" [(ngModel)]="registerData.gender" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="registerData.password" required>
+  
+      <label for="psw2"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw2" [(ngModel)]="registerData.psw2" required>
+      <hr>
+  
+      <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+      <button type="submit" class="registerbtn" (click)="register()">Register</button>
+    </div>
+  
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form> 
